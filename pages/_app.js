@@ -1,5 +1,4 @@
 import { ChakraProvider } from "@chakra-ui/provider";
-import { ColorModeScript } from "@chakra-ui/react";
 import Layout from '../components/layouts/main'
 import { AnimatePresence } from "framer-motion";
 

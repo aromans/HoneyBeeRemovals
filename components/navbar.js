@@ -4,16 +4,8 @@ import {
     Container,
     Link,
     Flex,
-    Heading,
-    Stack,
-    Menu,
-    MenuItem,
-    MenuList,
-    MenuButton,
-    IconButton,
-    useColorModeValue
+    Heading
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/react'
 import { GiBeehive } from "react-icons/gi"
 
 const NavItem = ({ href, path, _target, children, ...props }) => {
@@ -62,40 +54,6 @@ const Navbar = props => {
                         </NextLink>
                     </Heading>
                 </Flex>
-
-                {/* <Stack
-                    direction={{ base: 'column', md: 'row' }}
-                    display={{ base: 'none', md: 'flex' }}
-                    width={{ base: 'full', md: 'auto' }}
-                    alignItems='center'
-                    flexGrow={1}
-                    mt={{ base: 4, md: 0 }}
-                >
-                    <NavItem href='/' path={path}>
-                        Contact
-                    </NavItem>
-                </Stack>
-
-                <Box flex={1} align='right'>
-                    <Box ml={2} mr={3} display={{ base: 'inline-block', md: 'none' }}>
-                        <Menu isLazy id='navbar-menu'>
-                            <MenuButton 
-                                color='blue'
-                                as={IconButton}
-                                icon={HamburgerIcon}
-                                aria-label='Options'
-                            />
-                            <MenuList>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>Contact</MenuItem>
-                                </NextLink>
-                            </MenuList>
-                        </Menu>
-                    </Box>
-                </Box> */}
             </Container>
         </Box>
     )
