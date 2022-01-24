@@ -155,15 +155,15 @@ const Home = () => {
                         <Heading as="h3" align='center' variant="section-title" mt={10} mb={2}>
                             Guarantee
                         </Heading>
-                        <Stack direction='row' align='center' h='100px' p={4} w='100%'>
+                        <Stack direction='row' align='center' h='100%' p={4} w='100%'>
                             <CgBee size={50}/>
-                            <Divider orientation='vertical' mt={1} />
+                            <Divider orientation='vertical' mt={1} h={{md: '65px', sm: '125px'}}/>
                             <Text mb={5} align='left'>
                                 The surrounding area will be left clean and free of damage.
                             </Text>
 
                             <CgBee size={50}/>
-                            <Divider orientation='vertical' mt={1} />
+                            <Divider orientation='vertical' mt={1} h={{md: '65px', sm: '125px'}}/>
                             <Text mb={5} align='left'>
                             The area where the bees were located and the area four feet on either side will not be occupied by another bee colony.
                             </Text>
