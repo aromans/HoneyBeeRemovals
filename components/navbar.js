@@ -8,23 +8,6 @@ import {
 } from '@chakra-ui/react'
 import { GiBeehive } from "react-icons/gi"
 
-const NavItem = ({ href, path, _target, children, ...props }) => {
-    const active = path === href
-
-    return (
-        <NextLink href={href} passHref>
-            <Link
-                p={2}
-                bg={active ? 'greenCrayola' : undefined}
-                _target={_target}
-                {...props}
-            >
-               {children} 
-            </Link>
-        </NextLink>
-    )
-}
-
 const Navbar = props => {
     const { path } = props
 
@@ -57,13 +40,6 @@ const Navbar = props => {
             </Container>
         </Box>
     )
-
-
-
-
-    //         </Container>
-    //     </Box>
-    // )
 }
 
 export default Navbar
