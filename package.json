@@ -1,0 +1,33 @@
+{
+  "name": "Honey Bee Removals",
+  "version": "1.0.0",
+  "description": "Honey Bee Removals Website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Andrew Romans",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.7.4",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "axios": "^0.25.0",
+    "framer-motion": "^5.6.0",
+    "next": "^12.0.8",
+    "nodemailer": "^6.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-responsive-carousel": "^3.2.22"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-next": "^12.0.8",
+    "prettier": "^2.5.1"
+  }
+}
