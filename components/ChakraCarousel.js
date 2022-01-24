@@ -29,8 +29,8 @@ const ImageSlider = ({ slides }) => {
                 </Box>
                 <Box h="30px"></Box>
             </Container>
-        );
-      })}
+        )
+      })}x
     </Carousel>
   );
 };
