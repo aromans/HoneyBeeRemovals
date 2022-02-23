@@ -86,24 +86,25 @@ const Home = () => {
                             Honey Bee Removal Services
                         </Heading>
                         
-                        <Box align='center'>
+                        {/* <Box align='center'>
                             <Text textAlign='center' color='red' as='i' fontSize={10}>
                                 * Services do not include the finishing work to replace sheet rock, sanding and painting, etc. 
                             </Text>
-                        </Box>
+                        </Box> */}
 
                         <Stack direction='column' h='100%'>
-                            <Stack direction='row' h='100%' w='100%' mt={5} mb={5}>
+                            <Stack direction='column' h='100%' w='100%' mt={5} mb={5} align='center'>
                                 <CgBee size={25}/>
                                 <Heading as="h4" size={20}>Site Survey and Cost</Heading>
-                                <Divider orientation='vertical' h={{md: '150px', sm: '225px'}}/>
-                                <Stack direction='column' h='100%' w='100%'>
+                                <Stack textAlign={'justify'} direction='column' h='100%' w='80%'>
                                     <Text>	
                                         Exterior and interior inspection to how the honeybees enter the building and where the hive is located.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Preliminary assessment of how to access to the hive and what building materials (sheet rock etc.) need to be removed.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Written fixed price cost for removal services.
                                     </Text>
@@ -111,33 +112,39 @@ const Home = () => {
                             </Stack>
 
 
-                            <Stack direction='row' h='100%' w='100%'>
+                            <Stack direction='column' h='100%' w='100%' align={'center'}>
                                 <CgBee size={25}/>
                                 <Heading as="h4" size={20}>Bee Removal</Heading>
                                 <Box w='50px'></Box>
-                                <Divider orientation='vertical' h={{md: '570px', sm: '660px'}}/>
-                                <Stack direction='column' h='100%' w='100%'>
+                                <Stack textAlign={'justify'} direction='column' h='100%' w='80%'>
                                     <Text>
-                                    Preparation for removal including protective floor and wall coverings where necessary and the installation of barriers if necessary to contain bees to a small area of the building.
+                                        Preparation for removal including protective floor and wall coverings where necessary and the installation of barriers if necessary to contain bees to a small area of the building.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Gain access to the area where the bees need to be removed. 
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Removal of the bees, honey comb, and honey. Care is taken not to injure the bees in the process so they may be relocated to a new home.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Cleaning of the area where the bees were located. 
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Preparation of the area to prevent the bees from returning. This includes sealing of the entrance, adding insulation to fill the cavity and covering the exposed area with a plastic barrier.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Removal of the protective floor and wall coverings and barriers.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Cleanup of the area.
                                     </Text>
+                                    <Divider/>
                                     <Text>
                                         Final inspection and approval of the area with the home owner.
                                     </Text>
@@ -155,18 +162,22 @@ const Home = () => {
                         <Heading as="h3" align='center' variant="section-title" mt={10} mb={2}>
                             Guarantee
                         </Heading>
-                        <Stack direction='row' align='center' h='100%' p={4} w='100%'>
-                            <CgBee size={50}/>
-                            <Divider orientation='vertical' mt={1} h={{md: '65px', sm: '125px'}}/>
-                            <Text mb={5} align='left'>
-                                The surrounding area will be left clean and free of damage.
-                            </Text>
+                        <Stack direction='column' h='100%' p={4} w='100%'>
 
-                            <CgBee size={50}/>
-                            <Divider orientation='vertical' mt={1} h={{md: '65px', sm: '125px'}}/>
-                            <Text mb={5} align='left'>
-                            The area where the bees were located and the area four feet on either side will not be occupied by another bee colony.
-                            </Text>
+                            <Stack direction='row' h='100%' p={4} w='100%'>
+                                <CgBee />
+                                <Text mb={5} textAlign={'jusifty'}>
+                                    The surrounding area will be left clean and free of damage.
+                                </Text>
+                            </Stack>
+
+                            <Stack direction='row' h='100%' p={4} w='100%'>
+                                <CgBee size={28}/>
+                                <Text mb={5} textAlign={'jusifty'}>
+                                The area where the bees were located and the area four feet on either side will not be occupied by another bee colony.
+                                </Text>
+                            </Stack>
+                            
                         </Stack>
                     </Box>
                 </Section>
