@@ -14,7 +14,7 @@ import { CgBee } from 'react-icons/cg'
 // If you want to use your own Selectors look up the Advancaed Story book examples
 const ImageSlider = ({ slides }) => {
   return (
-    <Carousel infiniteLoop autoPlay={true} showArrows={true} stopOnHover={true} interval={10000} showThumbs={false}>
+    <Carousel infiniteLoop autoPlay={true} showArrows={true} stopOnHover={true} interval={15000} showThumbs={false}>
       {slides.map((slide) => {
         return (
             <Container w='100%' h='100%'>
@@ -24,7 +24,7 @@ const ImageSlider = ({ slides }) => {
                     <Stack align='center' mt={2} direction='column'>
                         <CgBee/>
                         <Divider orientation='horizontal' mt={1} />
-                        <Text align='left'> {slide.text} </Text>
+                        <Text textAlign={'justify'}> {slide.text} </Text>
                     </Stack>
                 </Box>
                 <Box h="30px"></Box>
